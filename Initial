@@ -1,0 +1,30 @@
+//
+//  main.cpp
+//  LeapYear
+//
+//  Created by Shobhith M on 04/10/18.
+//  Copyright © 2018 Shobhicode. All rights reserved.
+//
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+    cout<<"Welcome to the Leap Year Engine\n";
+    cout<<"Enter the year you want to check\n";
+    cin>>year;
+    if(year%4==0){
+        if(year%100!=0){
+            cout<<"Its a Leap Year\n";
+        }else if (year%400==0){
+            cout<<"Its a Leap Year\n";
+        }else{
+            cout<<"Its not a Leap Year\n";
+        }
+    }else
+    {
+        cout<<"Its not a Leap Year\n";
+    }
+    
+}
